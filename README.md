@@ -24,7 +24,7 @@ strMap := new(StrMap)
 
 strMap.Set("foo", "bar")
 
-val, err := byteMap.Get("foo")
+val, err := strMap.Get("foo")
 
 if err != nil {
   log.Fatal(err)
