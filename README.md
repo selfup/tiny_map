@@ -56,7 +56,7 @@ ok      github.com/selfup/tinymap       24.219s
 1. Using an int as an index is fastest for lookups/comparisons.
 1. Using []byte as key is the slowest (makes sense)
 1. Lower Bound means the value being grabbed is the 1th element in a slice of 1 element.
-1. Expected Bound means the value is being grabbed at the 5th element in a sliace of 5 elements.
+1. Expected Bound means the value is being grabbed at the 5th element in a slice of 5 elements.
 1. Upper Bound means the value being grabbed is the 100th element in a slice of 100 elements.
 1. Under the hood TinyMap uses slices to store Tuples.
 1. I have not yet added a catch block to prevent the slice to grow, but this should be used for small data sotrage :pray:
